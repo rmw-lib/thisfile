@@ -9,7 +9,11 @@ npm install @rmw/thisfile
 ## 使用
 
 ```
-import thisfile from '@rmw/thisfile'
+import {thisdir,thisfile} from '@rmw/thisfile'
+
+do =>
+  console.log thisfile(`import.meta`)
+  console.log thisdir(`import.meta`)
 
 ```
 
