@@ -13,6 +13,6 @@ version=$(cat package.json|jq -r '.version')
 npm set unsafe-perm true
 npm version patch
 git add -u
-git commit -m $version
+git commit -m $version || echo '' 
 git push
 npm publish --access=public
