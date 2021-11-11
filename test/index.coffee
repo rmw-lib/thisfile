@@ -1,7 +1,6 @@
 #!/usr/bin/env coffee
 
-import thisfile from '../src/index'
-import {thisdir} from '../src/index'
+import thisfile,{thisdir} from '@rmw/thisfile'
 
 do =>
   console.log thisfile(`import.meta`)

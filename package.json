@@ -6,17 +6,17 @@
   "license": "MulanPSL-2.0",
   "exports": {
     ".": "./lib/index.js",
-    "./": "./lib/"
+    "./*": "./lib/*"
   },
   "files": [
-    "/lib"
+    "lib"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "coffeescript": "^2.5.1",
+    "coffeescript": "^2.6.1",
     "colortape": "^0.1.2",
-    "nodemon": "^2.0.4",
-    "tape": "^5.0.1"
+    "nodemon": "^2.0.15",
+    "source-map-support": "^0.5.20",
+    "tape": "^5.3.1"
   },
   "scripts": {
     "prepare": "rm -rf lib && rsync -av --include='*/' --include='*.js' --exclude=* src/ lib/ && npx coffee --compile --output lib src/"
